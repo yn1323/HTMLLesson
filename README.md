@@ -1,2 +1,4 @@
-# HTMLLesson
-HTMLを教えるために作成
+# もくもく会用リポジトリ
+
+## HTMLLesson
+- 基礎HTML
