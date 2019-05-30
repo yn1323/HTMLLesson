@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/pro.css">
+<body>
+    <!-- ラジオボタンでタブ、コンテンツを切り替える -->
+    <input class="hidden" id="home" name="tab" type="radio" checked >
+    <input class="hidden" id="keyword" name="tab" type="radio">
+    <input class="hidden" id="hint" name="tab" type="radio">
+    <ul class="tabs">
+        <li class="tabHome"><label for="home">ホーム</label></li>
+        <li class="tabKeyword"><label for="keyword">キーワード</label></li>
+        <li class="tabHint"><label for="hint">ヒント</label></li>
+    </ul>
+    <content class="content contentHome">
+        <p>
+            ↑にあるようなタブ+ページ切り替えをHTMLとCSSのみで作ってみよう！
+        </p>
+        <p>条件！</p>
+        <ul>
+            <li>色、形はなんでもOK</li>
+            <li>リキッドレイアウトであること</li>
+            <li>CSS+HTMLのみで作成すること</li>
+        </ul>
+    </content>
+    <content class="content contentKeyword">
+        <p>キーワード</p>
+        <ul>
+            <li>リキッドレイアウト</li>
+            <li>inputタグ+labelタグの動作</li>
+            <li>疑似要素</li>
+            <li>疑似クラス</li>
+            <li>calc</li>
+            <li>変数</li>
+            <li>デフォルトのCSS書き換え</li>
+            <li>float</li>
+        </ul>
+    </content>
+    <content class="content contentHint">
+        <p>なし</p>
+    </content>
+</body>
+</html>

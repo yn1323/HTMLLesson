@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* デフォルトのCSSを書き換える */
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    /* CSSだって変数が使えるよ！ */
+    --tabY: 80px;
+    --main: 100, 100, 250;
+    --font: 250, 250, 250;
+    --bg: 240,240,240;
+    background: rgba(var(--bg),1);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* タブいっぱいにクリック領域を広げる */
+/* labelはinline要素なので、文字の上しか効かないため */
+label{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* ulタブのデフォルトCSSの書き換え */
+.tabs{
+    margin: 0;
+    padding: 0;
+}
+
+/* 子要素を指定 */
+.tabs > li{
+    /* 色指定を変数にしておくと何かと便利 */
+    border: 1px solid rgba(var(--main), 1);
+    /* ボーダーが２重にならないようにする */
+    border-right: none;
+    background: rgba(var(--main), 0.5);
+    color: rgba(var(--font),1);
+    margin: 0;
+    padding: 0;
+    /* liの中点を削除 */
+    list-style: none;
+    /* li要素を横に並べる */
+    float: left;
+    /* border分を引く */
+    width: calc(100%/ 3 - 1px);
+    /* 文字の中央寄せ */
+    text-align: center;
+}
+/* 最後のタブの右枠を補う */
+/*  ボーダーの数で幅が変わるため、幅も調整 */
+.tabs > li:last-child{
+    border-right: 1px solid rgba(var(--main), 1);
+    width: calc(100%/ 3 - 2px);
+}
+
+/* 擬似クラス */
+.tabs > li:hover{
+    background: rgba(var(--main), 0.7);
+}
+.tabs > li:active{
+    background: rgba(var(--main), 0.8);
+}
+
+/* floatの解除 */
+.content :first-child{
+    clear: both;
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+    /* 基本は表示しない */
+    display: none;
+}
+/* ラジオボタンを消す */
+/* 見えないけどlabelタグでオン・オフはできている */
+.hidden{
+    display: none;
+}
+
+/* チェックありラジオボタンの動作 */
+/* 擬似要素 */
+/* チェックがありなら表示 */
+#home:checked ~ .contentHome {
+    display: block;
+}
+#keyword:checked ~ .contentKeyword {
+    display: block;
+}
+#hint:checked ~ .contentHint {
+    display: block;
+}
+
+/* チェックがある場合にタブの色を変更 */
+#home:checked ~ ul > .tabHome{
+    background: rgba(var(--main), 0.8);
+}
+#knowledge:checked ~ ul > .tabKeyword{
+    background: rgba(var(--main), 0.8);
+}
+#hint:checked ~ ul > .tabHint{
+    background: rgba(var(--main), 0.8);
+}
+
