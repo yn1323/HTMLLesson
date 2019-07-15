@@ -11,3 +11,8 @@
     - [HTML+CSS](https://yn1323.github.io/mokumoku/CSSLesson/complete.html)
     - [HTML+CSSライブラリ](https://yn1323.github.io/mokumoku/CSSLesson/library.html)
     - [タブ切り替え](https://yn1323.github.io/mokumoku/CSSLesson/pro.html)
+
+1. 基礎JavaScript
+    - [JavaScriptの構文スライド](https://hackmd.io/J621J0dsTkCdzRjUB14_Gg)
+    - [JavaScriptとブラウザのスライド](https://hackmd.io/J15qrPq6RnWhyXCcUsRyZQ)
+    - [サンプルページ](https://yn1323.github.io/mokumoku/JavaScriptLesson/)
