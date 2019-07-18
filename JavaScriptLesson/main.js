@@ -32,8 +32,8 @@ valBtn.addEventListener("click", function () {
     let inputText = document.getElementById("input");
     // ID input のvalue
     let value = inputText.value;
-    // outputVal の in の text を value にする
-    outputVal.innerText = value;
+    // outputVal の in の HTML を value にする
+    outputVal.innerHTML = value;
 });
 
 // 中級

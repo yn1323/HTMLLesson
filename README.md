@@ -14,5 +14,5 @@
 
 1. 基礎JavaScript
     - [JavaScriptの構文スライド](https://hackmd.io/J621J0dsTkCdzRjUB14_Gg)
-    - [JavaScriptとブラウザのスライド](https://hackmd.io/J15qrPq6RnWhyXCcUsRyZQ)
+    - [DOM操作のスライド](https://hackmd.io/J15qrPq6RnWhyXCcUsRyZQ)
     - [サンプルページ](https://yn1323.github.io/mokumoku/JavaScriptLesson/)
