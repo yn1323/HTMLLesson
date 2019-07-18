@@ -3,40 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h3>
-        イベント
-    </h3>
+    <h2>色んなイベント</h2>
+    <h3>初級</h3>
     <div>
         クリックでアラートを表示
-        <button id="firstAlertClick">I am button</button>
+        <button id="clickAlert">I am button</button>
     </div>
     <hr>
     <div>
         マウスオーバーでアラート表示
-        <button id="firstAlertMouseOver">You are button</button>
+        <button id="hoverAlert">You are button</button>
     </div>
     <hr>
     <div>
         右クリックでアラートを表示
-        <button id="firstAlertRightClick">We are buttons</button>
+        <button id="rightClickAlert">We are buttons</button>
     </div>
-    <hr>
+    <h2>HTMLの取得</h2>
+    <h3>中級</h3>
     <div>
         <input type="text" id="input">
         <button id="getVal">テキストボックスの値を取得</button>
+        <div>
+            <span id="outputVal"></span>
+        </div>
     </div>
     <hr>
     <div>
         <input type="text" id="inputEx">
-        <button id="getValEx">ビックリマークつけるよ！</button>
+        <button id="getValEx">HTMLもつけるよ！</button>
+        <div>
+            <span id="outputValEx"></span>
+        </div>
     </div>
-    <hr>
+    <h2>HTMLの値を取得して加工</h2>
+    <h3>上級</h3>
     <div>
-        <input type="text" id="inputFizz">
+        <input type="text" id="inputFizzBuzz">
         <button id="getValFizz">FizzBuzz</button>
     </div>
-    <script src="./main.js"></script>
+    <!-- JavaScriptは今はとりあえずbodyタグ内の最後に配置！(おまじない) -->
+    <script src="main.js"></script>
 </body>
 </html>
